@@ -7,7 +7,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         crossorigin="anonymous"
     >
-    <link href="../../style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
     <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
 <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
 <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
@@ -55,8 +55,8 @@
                             <li class="breadcrumb-item">
                                 <a href="#">CS5200.MERGED.202330</a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">Asssignments</li>
-                            <li class="breadcrumb-item active" aria-current="page">A1-ENV+HTML</li>
+                            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                            
                         </ol>
                     </nav>
                 </i>
@@ -124,11 +124,11 @@
                       </li>
                       <li><a href="http://piazza.com">Piazza</a></li>
                       <li><a href="#">Zoom</a></li>
-                      <li >
+                      <li class="wd-active">
                         <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
                       </li>
                       <li><a href="#">Quizzes</a></li>
-                      <li class="wd-active"><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                      <li ><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
                       <li><a href="#">People</a></li>
                     <li style="width: inherit">
                         <div>
@@ -200,192 +200,190 @@
                 </ul>
             </div>
             <div class="wd-flex-grow-1">
-              <div class="float-end" style="margin-right: 10px;">
-                <button type="button" class="btn btn-light"><i class="fa fa-file-import"></i> Import</button>
-                <button type="button" class="btn btn-light"><i class="fa fa-file-export"></i> Export</button>
-                <button type="button" class="btn btn-light"><i class="fa fa-gear"></i></button>
-              </div>
-              <div style="padding: 10px; margin: 10px;">
-                <form>
-                  <div class="row" >
-                    <div class="col" style="font-weight: bold;">
-                      <label >Student Names</label>
-                      <input type="text" class="form-control" placeholder="Search Students">
-                    </div>
-                    <div class="col" style="font-weight: bold;">
-                      <label >Assignment Name</label>
-                      <input type="text" class="form-control" placeholder="Search Assignment">
-                    </div>
+                
+                <h1>Dashboard</h1>
+          <hr />
+          <h2>Published Courses (12)</h2>
+          <hr />
+          <div class="row">
+            <div class="row row-cols-1 row-cols-md-5 g-4">
+              <div class="col" style="width: 300px">
+                <div class="card">
+                  <img
+                    src="../../images/dashcard1.jpeg"
+                    class="card-img-top"
+                    style="max-height: 150px"
+                  />
+                  <div class="card-body">
+                    <a
+                      class="card-title"
+                      href="/Kanbas/Courses/Home/screen.html"
+                      style="
+                        text-decoration: none;
+                        color: navy;
+                        font-weight: bold;
+                      "
+                    >
+                      Hybrid Theory</a
+                    >
+                    <p class="card-text">The First Album</p>
+                    <a html="#" class="btn btn-primary"> Go </a>
                   </div>
-                </form>
+                </div>
               </div>
-              <div class="table-responsive">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>Student Name</th>
-                      <th>A1 SETUP Out of 100</th>
-                      <th>A2 HTML Out of 100</th>
-                      <th>A3 CSS Out of 100</th>
-                      <th>A4 BOOTSTRAP Out of 100</th>
-                      <th>A5 JAVASCRIPT Out of 100</th>
-                      <th>A6 REACT Out of 100</th>
-                      <th>A7 REDUX Out of 100</th>
-                      <th>A8 NODE Out of 100</th>
-                      <th>A9 MONGO Out of 100</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <!-- Student 1-12 with random grades -->
-                    <tr>
-                      <td>Student 1</td>
-                      <td>85</td>
-                      <td>92</td>
-                      <td><input type="text" placeholder="92" size="1" /><button type="button" class="btn btn-light"><i class="fa fa-arrow-right-to-bracket"></i></button></td>
-                      <td>88</td>
-                      <td>95</td>
-                      <td>87</td>
-                      <td>90</td>
-                      <td>82</td>
-                      <td>91</td>
-                    </tr>
-                    <tr>
-                      <td>Student 2</td>
-                      <td>78</td>
-                      <td>89</td>
-                      <td>93</td>
-                      <td>87</td>
-                      <td>84</td>
-                      <td>91</td>
-                      <td><input type="text" placeholder="92" size="1" /><button type="button" class="btn btn-light"><i class="fa fa-arrow-right-to-bracket"></i></button></td>
-                      <td>85</td>
-                      <td>94</td>
-                    </tr>
-                    <tr>
-                      <td>Student 3</td>
-                      <td>92</td>
-                      <td>87</td>
-                      <td>85</td>
-                      <td>91</td>
-                      <td>79</td>
-                      <td>88</td>
-                      <td>93</td>
-                      <td>86</td>
-                      <td><input type="text" placeholder="92" size="1" /><button type="button" class="btn btn-light"><i class="fa fa-arrow-right-to-bracket"></i></button></td>
-                    </tr>
-                    <tr>
-                      <td>Student 4</td>
-                      <td>88</td>
-                      <td>90</td>
-                      <td>91</td>
-                      <td>82</td>
-                      <td>85</td>
-                      <td>94</td>
-                      <td>79</td>
-                      <td>89</td>
-                      <td>87</td>
-                    </tr>
-                    <tr>
-                      <td>Student 5</td>
-                      <td>94</td>
-                      <td>85</td>
-                      <td>89</td>
-                      <td>93</td>
-                      <td>81</td>
-                      <td>86</td>
-                      <td>92</td>
-                      <td>88</td>
-                      <td>84</td>
-                    </tr>
-                    <tr>
-                      <td>Student 6</td>
-                      <td>89</td>
-                      <td>92</td>
-                      <td>78</td>
-                      <td>87</td>
-                      <td>95</td>
-                      <td>84</td>
-                      <td>91</td>
-                      <td>88</td>
-                      <td>90</td>
-                    </tr>
-                    <tr>
-                      <td>Student 7</td>
-                      <td>83</td>
-                      <td>94</td>
-                      <td>87</td>
-                      <td>89</td>
-                      <td>91</td>
-                      <td>86</td>
-                      <td>82</td>
-                      <td>95</td>
-                      <td>88</td>
-                    </tr>
-                    <tr>
-                      <td>Student 8</td>
-                      <td><input type="text" placeholder="92" size="1" /><button type="button" class="btn btn-light"><i class="fa fa-arrow-right-to-bracket"></i></button></td>
-                      <td>88</td>
-                      <td>79</td>
-                      <td>92</td>
-                      <td>87</td>
-                      <td>85</td>
-                      <td>94</td>
-                      <td>83</td>
-                      <td>90</td>
-                    </tr>
-                    <tr>
-                      <td>Student 9</td>
-                      <td>87</td>
-                      <td>91</td>
-                      <td>94</td>
-                      <td>86</td>
-                      <td>90</td>
-                      <td>88</td>
-                      <td>81</td>
-                      <td>92</td>
-                      <td>79</td>
-                    </tr>
-                    <tr>
-                      <td>Student 10</td>
-                      <td>90</td>
-                      <td>84</td>
-                      <td>88</td>
-                      <td>91</td>
-                      <td>83</td>
-                      <td>92</td>
-                      <td>89</td>
-                      <td>87</td>
-                      <td>95</td>
-                    </tr>
-                    <tr>
-                      <td>Student 11</td>
-                      <td>86</td>
-                      <td>93</td>
-                      <td>92</td>
-                      <td>85</td>
-                      <td>88</td>
-                      <td>90</td>
-                      <td>84</td>
-                      <td><input type="text" placeholder="92" size="1" /><button type="button" class="btn btn-light"><i class="fa fa-arrow-right-to-bracket"></i></button></td>
-                      <td>87</td>
-                    </tr>
-                    <tr>
-                      <td>Student 12</td>
-                      <td>92</td>
-                      <td>87</td>
-                      <td>85</td>
-                      <td>89</td>
-                      <td>93</td>
-                      <td>81</td>
-                      <td>86</td>
-                      <td>90</td>
-                      <td>88</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="col" style="width: 300px">
+                <div class="card">
+                  <img
+                    src="../../images/dashcard2.jpg"
+                    class="card-img-top"
+                    style="max-height: 150px"
+                  />
+                  <div class="card-body">
+                    <a
+                      class="card-title"
+                      href="/Kanbas/Courses/Home/screen.html"
+                      style="
+                        text-decoration: none;
+                        color: navy;
+                        font-weight: bold;
+                      "
+                    >
+                      Green Day</a
+                    >
+                    <p class="card-text">American Rock</p>
+                    <a html="#" class="btn btn-primary"> Go </a>
+                  </div>
+                </div>
               </div>
-              
+              <div class="col" style="width: 300px">
+                <div class="card">
+                  <img
+                    src="../../images/dashcard5.jpg"
+                    class="card-img-top"
+                    style="max-height: 150px"
+                  />
+                  <div class="card-body">
+                    <a
+                      class="card-title"
+                      href="/Kanbas/Courses/Home/screen.html"
+                      style="
+                        text-decoration: none;
+                        color: navy;
+                        font-weight: bold;
+                      "
+                    >
+                      Linkin park</a
+                    >
+                    <p class="card-text">The Best...Hands Down</p>
+                    <a html="#" class="btn btn-primary"> Go </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="width: 300px">
+                <div class="card">
+                  <img
+                    src="../../images/dashcard3.jpg"
+                    class="card-img-top"
+                    style="max-height: 150px"
+                  />
+                  <div class="card-body">
+                    <a
+                      class="card-title"
+                      href="/Kanbas/Courses/Home/screen.html"
+                      style="
+                        text-decoration: none;
+                        color: navy;
+                        font-weight: bold;
+                      "
+                    >
+                      Data Mining</a
+                    >
+                    <p class="card-text">Find Patterns in data</p>
+                    <a html="#" class="btn btn-primary"> Go </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="width: 300px">
+                <div class="card">
+                  <img
+                    src="../../images/dashcard4.jpg"
+                    class="card-img-top"
+                    style="max-height: 150px"
+                  />
+                  <div class="card-body">
+                    <a
+                      class="card-title"
+                      href="/Kanbas/Courses/Home/screen.html"
+                      style="
+                        text-decoration: none;
+                        color: navy;
+                        font-weight: bold;
+                      "
+                    >
+                      Machine Learning</a
+                    >
+                    <p class="card-text">Really useful for the future</p>
+                    <a html="#" class="btn btn-primary"> Go </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="width: 300px">
+                <div class="card">
+                  <img
+                    src="../../images/dashcard1.jpeg"
+                    class="card-img-top"
+                    style="max-height: 150px"
+                  />
+                  <div class="card-body">
+                    <a
+                      class="card-title"
+                      href="/Kanbas/Courses/Home/screen.html"
+                      style="
+                        text-decoration: none;
+                        color: navy;
+                        font-weight: bold;
+                      "
+                    >
+                      Java</a
+                    >
+                    <p class="card-text">
+                      Super Vintage but still relevant
+                    </p>
+                    <a html="#" class="btn btn-primary"> Go </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="width: 300px">
+                <div class="card">
+                  <img
+                    src="../../images/dashcard2.jpg"
+                    class="card-img-top"
+                    style="max-height: 150px"
+                  />
+                  <div class="card-body">
+                    <a
+                      class="card-title"
+                      href="/Kanbas/Courses/Home/screen.html"
+                      style="
+                        text-decoration: none;
+                        color: navy;
+                        font-weight: bold;
+                      "
+                    >
+                      Python</a
+                    >
+                    <p class="card-text">
+                      Easy but takes time getting use to
+                    </p>
+                    <a html="#" class="btn btn-primary"> Go </a>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
             </div>
         </body>
     </html>
+
+

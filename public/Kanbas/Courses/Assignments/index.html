@@ -1,153 +1,133 @@
-<input type="text" placeholder="Search for Assignments" />
-<button>Group</button>
-<button>Assignment</button>
-<select>
-  <option>Edit Assignment Dates</option>
-</select>
-<h3>
-  ASSIGNMENTS 40% of Total
-  <select size="1">
-    <option>Edit</option>
-    <option>speed grader</option>
-    <option>Duplicate</option>
-    <option>Delete</option>
-    <option>Move To...</option>
-    <option>Send To...</option>
-    <option>Copy To...</option>
-    <option>Share to Commons</option>
-  </select>
-</h3>
-<ul>
-  <li>
-    <a href="#"
-      >A1 - ENV + HTML <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-  <li>
-    <a href="#"
-      >A2 - CSS + BOOTSTRAP <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-  <li>
-    <a href="#"
-      >A3 - JS + REACT <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-  <li>
-    <a href="#"
-      >A4 - STATE + REDUX <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-  <li>
-    <a href="#"
-      >A5 - NODE + SESSION <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-  <li>
-    <a href="#"
-      >A6 - MONGO + MONGOOSE <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-</ul>
+<html>
+  <head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-GLhlTQ8iN17RS8Zl6O3LlMZ3+9iNEXl+T2BY5AAsjFuC4QfaEqJ2Qsk5IyU2D5P1"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar d-sm-none">
+      <div class="navbar-icon">
+        <a>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="navbar-title" style="display: block; text-align: center">
+        CS5200.MERGED.202330
+        <br />
+        HOME
+      </div>
+      <div class="navbar-icon">
+        <a href="../course.html">
+          <i class="fa fa-binoculars" aria-hidden="true"></i>
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- Implement buttons Collapse All, View Progress, etc. here -->
+    <hr />
+    <div class="p-1 d-flex">
+        <div class="wd-75">
+            <form >
+                <div class="form-group">
 
-<h3>
-  QUIZZES 10% of Total
-  <select size="1">
-    <option>Edit</option>
-    <option>speed grader</option>
-    <option>Duplicate</option>
-    <option>Delete</option>
-    <option>Move To...</option>
-    <option>Send To...</option>
-    <option>Copy To...</option>
-    <option>Share to Commons</option>
-  </select>
-</h3>
-<ul>
-  <li>
-    <a href="#"
-      >Q1 - HTML <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-  <li>
-    <a href="#"
-      >Q2 - CSS <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-  <li>
-    <a href="#"
-      >Q3 - JS, ES6 <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-  <li>
-    <a href="#"
-      >Q4 - NODE <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-  <li>
-    <a href="#"
-      >Q5 - MONGO <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-</ul>
+                    <input type="text" class="form-control" placeholder="Search for Assignment">
+                  </div>
+            </form>
+          </div>
+          <div class="col"></div>
+      <div class="justify-content-end float-end">
+        <button class="btn btn-light">
+          <i class="fa fa-plus ms-2"></i> Group
+        </button>
 
-<h3>
-  EXAMS 20% of Total
-  <select size="1">
-    <option>Edit</option>
-    <option>speed grader</option>
-    <option>Duplicate</option>
-    <option>Delete</option>
-    <option>Move To...</option>
-    <option>Send To...</option>
-    <option>Copy To...</option>
-    <option>Share to Commons</option>
-  </select>
-</h3>
-<ul>
-  <li>
-    <a href="#"
-      >Midterm <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-  <li>
-    <a href="#"
-      >Final <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-</ul>
+          <button type="button" class="btn btn-danger ms-2">
+            <i class="fa fa-plus ms-2"></i> Assignment </i>
+          </button>
+          <button class="btn btn-light ms-2">
+            <i class="fa fa-ellipsis-v ms-2"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <ul class="list-group wd-modules">
+      <li class="list-group-item">
+        <div>
+          <i class="fa fa-ellipsis-v"></i> Assignments
+          <span class="float-end">
+            <span class="border border-dark rounded-4 ms-4 wd-padding-rl-5">  40 % of Total  </span>
+            <i class="fa fa-ellipsis-v ms-2"></i>
+          </span>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-v"></i> 
+            <i class="fa-regular fa-pen-to-square wd-icon-green"></i>
+            <span class="wd-bold">A1 SETUP</span>
+            <span class="float-end">
+              <i class="fa fa-check-circle text-success"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
 
-<h3>
-  PROJECT 30% of Total
-  <select size="1">
-    <option>Edit</option>
-    <option>speed grader</option>
-    <option>Duplicate</option>
-    <option>Delete</option>
-    <option>Move To...</option>
-    <option>Send To...</option>
-    <option>Copy To...</option>
-    <option>Share to Commons</option>
-  </select>
-</h3>
-<ul>
-  <li>
-    <a href="#"
-      >Project <br />
-      Multiple Modules</a
-    >| Not available
-  </li>
-</ul>
+            </span>
+            <p class="wd-padding-rl-30">Week 0 - SETUP - Week Starting on Monday September 5th |<br><span class="wd-bold">Due</span>: Sep 18 at 11:59pm | 100 pts</p>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-v"></i> 
+            <i class="fa-regular fa-pen-to-square wd-icon-green"></i>
+            <span class="wd-bold">A2 HTML</span>
+            <span class="float-end">
+              <i class="fa fa-check-circle text-success"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
+
+            </span>
+            <p class="wd-padding-rl-30">Week 1 - SETUP - Week Starting on Monday September 5th |<br><span class="wd-bold">Due</span>: Sep 18 at 11:59pm | 100 pts</p>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-v"></i> 
+            <i class="fa-regular fa-pen-to-square wd-icon-green"></i>
+            <span class="wd-bold">A3 CSS</span>
+            <span class="float-end">
+              <i class="fa fa-check-circle text-success"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
+
+            </span>
+            <p class="wd-padding-rl-30">Week 2 - SETUP - Week Starting on Monday September 5th |<br><span class="wd-bold">Due</span>: Sep 18 at 11:59pm | 100 pts</p>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-v"></i> 
+            <i class="fa-regular fa-pen-to-square wd-icon-green"></i>
+            <span class="wd-bold">A3 JAVASCRIPT</span>
+            <span class="float-end">
+              <i class="fa fa-check-circle text-success"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
+
+            </span>
+            <p class="wd-padding-rl-30">Week 3 - SETUP - Shadows flooding over scars begin to fade |<br><span class="wd-bold">Due</span>: Sep 18 at 11:59pm | 100 pts</p>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-v"></i> 
+            <i class="fa-regular fa-pen-to-square wd-icon-green"></i>
+            <span class="wd-bold">A4 LINKIN PARK</span>
+            <span class="float-end">
+              <i class="fa fa-check-circle text-success"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
+
+            </span>
+            <p class="wd-padding-rl-30">Week 4 - Hybrid Theory - Thats where it started |<br><span class="wd-bold">Due</span>: Sep 18 at 11:59pm | 100 pts</p>
+          </li>
+        </ul>
+
+      </li>
+    </ul>
+  </body>
+</html>
