@@ -1,0 +1,11 @@
+.fs-2 {
+  color: red;
+}
+.wd-kanbas-navigation li:hover {
+  background-color: #ff8a8a;
+}
+.letter-icon {
+  font-size: 4em;
+  font-family: 'Arial', sans-serif;
+  color: red;
+}
