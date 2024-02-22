@@ -414,3 +414,7 @@ button {
 #grey_icon {
   color: gray;
 }
+.published {
+  color: green;
+  padding: 10px;
+}

@@ -1,0 +1,27 @@
+.wd-text-box-deco input {
+  margin: 10px;
+  border-radius: 5px;
+  border-color: rgb(211, 211, 211);
+  color: rgb(174, 172, 172);
+}
+.wd-new-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Spacing between the search/groups/assignment bar and the list */
+}
+.assignment-box {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: rgb(190, 190, 190);
+}
+.custom-item {
+  color: black;
+  border: 10px;
+}
+.wd-icon-green {
+  color: green;
+}
+.wd-flex-grow-1 {
+  margin-right: 10px;
+}

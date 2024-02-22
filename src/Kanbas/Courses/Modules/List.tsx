@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './../../style.css';
+import './index.css';
 import { modules } from '../../Database';
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle } from 'react-icons/fa';
 import { useParams } from 'react-router';
@@ -9,8 +10,26 @@ function ModuleList() {
   const [selectedModule, setSelectedModule] = useState(modulesList[0]);
   return (
     <>
-      <div className="wd-flex-grow-1">
-        {/* <!-- Add buttons here--> */}
+      {/* <div className="wd-flex-grow-1"> */}
+      <div className="list-group wd-modules">
+        <div className="p-1 ">
+          <div className="d-flex justify-content-end margin-bottom-wd">
+            <button className="btn btn-light">Collapse All</button>
+            <button className="btn btn-light ms-2">View Progress</button>
+            <button
+              className="btn btn-light dropdown-toggle"
+              data-toggle="dropdown"
+            >
+              <FaCheckCircle className="text-success" /> Publish All
+            </button>
+            <button type="button" className="btn btn-danger ms-2">
+              Module <FaPlusCircle className="ms-2" />
+            </button>
+            <button className="btn btn-light ms-2">
+              <FaEllipsisV className="ms-2" />
+            </button>
+          </div>
+        </div>
         <ul className="list-group wd-modules">
           {modulesList.map((module, index) => (
             <li
