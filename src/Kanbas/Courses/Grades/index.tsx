@@ -50,7 +50,7 @@ function Grades() {
           </form>
         </div>
         <div className="table-responsive">
-          <table className="table">
+          <table className="table table-striped table-bordered">
             <thead>
               <th>Student Name</th>
               {as.map((assignment) => (
