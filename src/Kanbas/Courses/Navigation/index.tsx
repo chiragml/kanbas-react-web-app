@@ -1,7 +1,16 @@
 import { Link, useLocation } from 'react-router-dom';
 import './../../style.css'; // feel free to use the CSS from previous assignments
 function CourseNavigation() {
-  const links = ['Home', 'Modules', 'Piazza', 'Grades', 'Assignments'];
+  const links = [
+    'Home',
+    'Modules',
+    'Piazza',
+    'Grades',
+    'Assignments',
+    'Quizes',
+    'People',
+    'Credentials',
+  ];
   const { pathname } = useLocation();
   return (
     <ul className="wd-course-navigation" style={{ width: '50px' }}>

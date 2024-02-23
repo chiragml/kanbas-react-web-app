@@ -7,5 +7,8 @@
   { "_id": "A203", "title": "Heating Analysis", "course": "RS102" },
   { "_id": "A301", "title": "Structural Design Task", "course": "RS103" },
   { "_id": "A302", "title": "Orbital Calculations", "course": "RS103" },
-  { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" }
+  { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" },
+  { "_id": "A401", "title": "It Start with one thing", "course": "Lp101" },
+  { "_id": "A402", "title": "The hunting party", "course": "Lp101" },
+  { "_id": "A403", "title": "One More Light", "course": "Lp101" }
 ]

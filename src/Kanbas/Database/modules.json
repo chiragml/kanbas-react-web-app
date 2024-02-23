@@ -112,5 +112,83 @@
     "name": "Spacecraft Systems Engineering",
     "description": "Overview of spacecraft systems and subsystems engineering.",
     "course": "RS103"
+  },
+  {
+    "_id": "M401",
+    "name": "The Essence of Music",
+    "description": "Exploring the fundamental elements that define music as an art form.",
+    "course": "Lp101",
+    "lessons": [
+      {
+        "_id": "L401",
+        "name": "Music Theory Basics",
+        "description": "An introduction to scales, chords, and melodies.",
+        "module": "M401"
+      },
+      {
+        "_id": "L402",
+        "name": "History of Music",
+        "description": "A survey of music history from classical to contemporary styles.",
+        "module": "M401"
+      },
+      {
+        "_id": "L403",
+        "name": "Genres and Styles",
+        "description": "Exploring different genres of music and their stylistic elements.",
+        "module": "M401"
+      }
+    ]
+  },
+  {
+    "_id": "M402",
+    "name": "Lyrics and Songwriting",
+    "description": "A deep dive into the craft of lyricism and the process of songwriting.",
+    "course": "Lp101",
+    "lessons": [
+      {
+        "_id": "L404",
+        "name": "The Art of Lyric Writing",
+        "description": "Techniques and tips for writing compelling lyrics.",
+        "module": "M402"
+      },
+      {
+        "_id": "L405",
+        "name": "Song Structure",
+        "description": "Understanding the common structures of songs in various genres.",
+        "module": "M402"
+      },
+      {
+        "_id": "L406",
+        "name": "Creative Process in Songwriting",
+        "description": "Developing a workflow for creativity and expression in songwriting.",
+        "module": "M402"
+      }
+    ]
+  },
+  {
+    "_id": "M403",
+    "name": "Music Production Techniques",
+    "description": "Understanding the technical aspects of music production and sound engineering.",
+    "course": "Lp101",
+    "lessons": [
+      {
+        "_id": "L407",
+        "name": "Recording Techniques",
+        "description": "Fundamentals of capturing sound, from microphones to digital recording.",
+        "module": "M403"
+      },
+      {
+        "_id": "L408",
+        "name": "Mixing and Mastering",
+        "description": "The process of refining and finalizing a musical piece for distribution.",
+        "module": "M403"
+      },
+      {
+        "_id": "L409",
+        "name": "Electronic Music Production",
+        "description": "Techniques specific to producing electronic music and beat making.",
+        "module": "M403"
+      }
+    ]
   }
 ]

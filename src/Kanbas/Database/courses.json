@@ -2,7 +2,7 @@
   {
     "_id": "Lp101",
     "name": "Linkin Park",
-    "number": "LP101",
+    "number": "LP10125",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
     "image": "linkinpark.jpg"
@@ -13,7 +13,7 @@
     "number": "RS4550",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "rocket-propulsion.png"
+    "image": "linkinpark.jpg"
   },
   {
     "_id": "RS102",
@@ -21,7 +21,7 @@
     "number": "RS4560",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "aerodynamics.png"
+    "image": "linkinpark.jpg"
   },
   {
     "_id": "RS103",
@@ -29,6 +29,6 @@
     "number": "RS4570",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "spaceship-design.png"
+    "image": "linkinpark.jpg"
   }
 ]

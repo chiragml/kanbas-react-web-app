@@ -1,0 +1,17 @@
+.table .table-striped.table-hover th,
+.table.table-striped.table-hover td {
+  border-right: 1px solid black; /* Column border color */
+}
+
+.table th {
+  padding: 15px;
+  background-color: rgb(201, 198, 198);
+  border-color: black;
+  border-width: 1px;
+}
+.table tr > td {
+  border-width: 1px;
+  border-color: black;
+  text-align: center;
+  background-color: rgb(219, 219, 219);
+}
