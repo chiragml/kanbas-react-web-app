@@ -28,6 +28,7 @@ function Courses() {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
   return (
     <div className="wd-flex-grow-1 ">
       <hr />
@@ -42,14 +43,21 @@ function Courses() {
           <li className="breadcrumb-item active">{linkName}</li>
         </ol>
       </nav>
-      {isDropdownOpen && <div></div>}
+
       <hr />
 
       {/* <div className="wd-flex-row-cotainer"> */}
       <div className="row">
-        <div className="d-none d-md-block col-2">
-          <CourseNavigation />
-        </div>
+        {/* <div className="d-none d-md-block col-2"> */}
+        {isDropdownOpen && (
+          <div
+            className={`sidebar${isDropdownOpen ? ' open' : ''} col-2`}
+            id="colapse"
+          >
+            <CourseNavigation />
+          </div>
+        )}
+        {/* </div> */}
         {/* <div> */}
         {/* <div
           className="wd-course-navigation"

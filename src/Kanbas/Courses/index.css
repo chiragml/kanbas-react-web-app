@@ -3,3 +3,24 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+/* Default styles, sidebar hidden on mobile */
+.sidebar {
+  display: none;
+  /* Add additional styling for your sidebar here */
+}
+
+/* When toggled open, display block */
+.sidebar .open {
+  display: block;
+}
+
+/* Larger screen styles */
+@media (min-width: 768px) {
+  .sidebar {
+    display: block; /* Always show sidebar on larger screens */
+  }
+
+  .hamburger-icon {
+    display: none; /* Hide hamburger icon on larger screens */
+  }
+}
