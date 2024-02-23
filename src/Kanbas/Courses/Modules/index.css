@@ -7,3 +7,20 @@
 .wd-modules {
   color: rgb(188, 187, 187);
 }
+.assignment-box {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: rgb(190, 190, 190);
+}
+.wd-list {
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+}
+
+/* For the 'Resources' and 'GITHUB' headers, assuming a class 'header' */
+.header {
+  font-weight: bold;
+  color: #000; /* Black color for headers */
+  background-color: #f9f9f9; /* Light grey background */
+}

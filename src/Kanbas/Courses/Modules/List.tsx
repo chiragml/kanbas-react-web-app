@@ -34,10 +34,10 @@ function ModuleList() {
           {modulesList.map((module, index) => (
             <li
               key={index}
-              className="list-group-item"
+              className="list-group-item "
               onClick={() => setSelectedModule(module)}
             >
-              <div>
+              <div className="header">
                 <FaEllipsisV className="me-2" />
                 {module.name}
                 <span className="float-end">
