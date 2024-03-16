@@ -1,14 +1,122 @@
 [
-  { "_id": "A101", "title": "Propulsion Assignment", "course": "RS101" },
-  { "_id": "A102", "title": "Combustion Analysis", "course": "RS101" },
-  { "_id": "A103", "title": "Nozzle Design Project", "course": "RS101" },
-  { "_id": "A201", "title": "Aerodynamics Quiz", "course": "RS102" },
-  { "_id": "A202", "title": "Flow Analysis", "course": "RS102" },
-  { "_id": "A203", "title": "Heating Analysis", "course": "RS102" },
-  { "_id": "A301", "title": "Structural Design Task", "course": "RS103" },
-  { "_id": "A302", "title": "Orbital Calculations", "course": "RS103" },
-  { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" },
-  { "_id": "A401", "title": "It Start with one thing", "course": "Lp101" },
-  { "_id": "A402", "title": "The hunting party", "course": "Lp101" },
-  { "_id": "A403", "title": "One More Light", "course": "Lp101" }
+  {
+    "_id": "A101",
+    "title": "Propulsion Assignment",
+    "course": "RS101",
+    "description": "Some Description 1",
+    "points": 100,
+    "due": "2024-03-25",
+    "availableFrom": "2024-03-20",
+    "until": "2024-03-30"
+  },
+  {
+    "_id": "A102",
+    "title": "Combustion Analysis",
+    "course": "RS101",
+    "description": "Some Description 2",
+    "points": 100,
+    "due": "2024-03-25",
+    "availableFrom": "2024-03-20",
+    "until": "2024-03-30"
+  },
+  {
+    "_id": "A103",
+    "title": "Nozzle Design Project",
+    "course": "RS101",
+    "description": "Some Description 3",
+    "points": 100,
+    "due": "2024-03-25",
+    "availableFrom": "2024-03-20",
+    "until": "2024-03-30"
+  },
+  {
+    "_id": "A201",
+    "title": "Aerodynamics Quiz",
+    "course": "RS102",
+    "description": "Some Description 4",
+    "points": 100,
+    "due": "2024-03-25",
+    "availableFrom": "2024-03-20",
+    "until": "2024-03-30"
+  },
+  {
+    "_id": "A202",
+    "title": "Flow Analysis",
+    "course": "RS102",
+    "description": "Some Description 5",
+    "points": 100,
+    "due": "2024-03-25",
+    "availableFrom": "2024-03-20",
+    "until": "2024-03-30"
+  },
+  {
+    "_id": "A203",
+    "title": "Heating Analysis",
+    "course": "RS102",
+    "description": "Some Description 6",
+    "points": 100,
+    "due": "2024-03-25",
+    "availableFrom": "2024-03-20",
+    "until": "2024-03-30"
+  },
+  {
+    "_id": "A301",
+    "title": "Structural Design Task",
+    "course": "RS103",
+    "description": "Some Description 7",
+    "points": 100,
+    "due": "2024-03-25",
+    "availableFrom": "2024-03-20",
+    "until": "2024-03-30"
+  },
+  {
+    "_id": "A302",
+    "title": "Orbital Calculations",
+    "course": "RS103",
+    "description": "Some Description 8",
+    "points": 100,
+    "due": "2024-03-25",
+    "availableFrom": "2024-03-20",
+    "until": "2024-03-30"
+  },
+  {
+    "_id": "A303",
+    "title": "Systems Engineering Exam",
+    "course": "RS103",
+    "description": "Some Description 9",
+    "points": 100,
+    "due": "2024-03-25",
+    "availableFrom": "2024-03-20",
+    "until": "2024-03-30"
+  },
+  {
+    "_id": "A401",
+    "title": "It Start with one thing",
+    "course": "Lp101",
+    "description": "Some Description 10",
+    "points": 100,
+    "due": "2024-03-25",
+    "availableFrom": "2024-03-20",
+    "until": "2024-03-30"
+  },
+  {
+    "_id": "A402",
+    "title": "The hunting party",
+    "course": "Lp101",
+    "description": "Some Description 11",
+    "points": 100,
+    "due": "2024-03-25",
+    "availableFrom": "2024-03-20",
+    "until": "2024-03-30"
+  },
+  {
+    "_id": "A403",
+    "title": "One More Light",
+    "course": "Lp101",
+    "description": "Some Description 12",
+    "points": 100,
+    "due": "2024-03-25",
+    "availableFrom": "2024-03-20",
+    "until": "2024-03-30"
+  }
 ]

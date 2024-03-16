@@ -19,7 +19,7 @@ import AssignmentEditor from './Assignments/Editor';
 import Grades from './Grades';
 import KanbasNavigation from '../Navigation';
 
-function Courses() {
+function Courses({ courses }: { courses: any[] }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const { courseId } = useParams();
   const location = useLocation();

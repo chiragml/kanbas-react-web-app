@@ -9,10 +9,21 @@ import { Link, useParams } from 'react-router-dom';
 import { assignments } from '../../Database';
 import './index.css';
 import './../../style.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { KanbasState } from '../../store';
+import { addAssignment, setAssignment } from './assignmentsRudecer';
+
 function Assignments() {
   const { courseId } = useParams();
-  const assignmentList = assignments.filter(
-    (assignment) => assignment.course === courseId
+  // const assignmentList = assignments.filter(
+  //   (assignment) => assignment.course === courseId
+  // );
+  const assignmentList = useSelector(
+    (state: KanbasState) => state.assignmentReducer.assignments
+  );
+  const dispatch = useDispatch();
+  const assignment = useSelector(
+    (state: KanbasState) => state.assignmentReducer.assignment
   );
   return (
     <>
@@ -32,10 +43,42 @@ function Assignments() {
             >
               Group
             </button>
-            <button className="btn btn-danger">
-              <FaPlusCircle />
-              Assignment
+            <Link
+              to={`/Kanbas/Courses/${courseId}/Assignments/AddAssignment`}
+              onClick={() =>
+                dispatch(
+                  setAssignment({
+                    title: 'New Assignment',
+                    description: 'New Assignment Description',
+                    points: 100,
+                    due: '2023-03-25',
+                    availableFrom: '2023-03-25',
+                    until: '2023-03-25',
+                  })
+                )
+              }
+            >
+              <button className="btn btn-danger">
+                <FaPlusCircle />
+                Assignment
+              </button>
+            </Link>
+            &ensp;
+            {/* <button
+              onClick={() =>
+                dispatch(addAssignment({ ...assignment, course: courseId }))
+              }
+            >
+              Add
             </button>
+            <input
+              value={assignment.title}
+              onChange={(e) =>
+                dispatch(
+                  setAssignment({ ...assignment, title: e.target.value })
+                )
+              }
+            /> */}
             <button className="btn btn-light">
               <FaEllipsisV />
             </button>
@@ -57,21 +100,24 @@ function Assignments() {
               </span>
             </div>
             <ul className="list-group">
-              {assignmentList.map((assignment) => (
-                <li className="list-group-item">
-                  <FaEllipsisV className="me-2" />
-                  <FaPenSquare className="wd-icon-green" />
-                  <Link
-                    to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-                  >
-                    {assignment.title}
-                  </Link>
-                  <span className="float-end">
-                    <FaCheckCircle className="text-success" />
-                    <FaEllipsisV className="ms-2" />
-                  </span>
-                </li>
-              ))}
+              {assignmentList
+                .filter((assin) => assin.course === courseId)
+                .map((assin) => (
+                  <li className="list-group-item">
+                    <FaEllipsisV className="me-2" />
+                    <FaPenSquare className="wd-icon-green" />
+                    <Link
+                      to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
+                      onClick={() => dispatch(setAssignment(assin))}
+                    >
+                      {assin.title}
+                    </Link>
+                    <span className="float-end">
+                      <FaCheckCircle className="text-success" />
+                      <FaEllipsisV className="ms-2" />
+                    </span>
+                  </li>
+                ))}
             </ul>
           </li>
         </ul>
