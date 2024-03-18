@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   FaCheckCircle,
   FaEllipsisV,
@@ -6,12 +6,13 @@ import {
   FaPlusCircle,
 } from 'react-icons/fa';
 import { Link, useParams } from 'react-router-dom';
-import { assignments } from '../../Database';
+
 import './index.css';
 import './../../style.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { KanbasState } from '../../store';
-import { addAssignment, setAssignment } from './assignmentsRudecer';
+import { deleteAssignment, setAssignment } from './assignmentsRudecer';
+import { Modal, Button } from 'react-bootstrap';
 
 function Assignments() {
   const { courseId } = useParams();
@@ -21,10 +22,13 @@ function Assignments() {
   const assignmentList = useSelector(
     (state: KanbasState) => state.assignmentReducer.assignments
   );
+
   const dispatch = useDispatch();
   const assignment = useSelector(
     (state: KanbasState) => state.assignmentReducer.assignment
   );
+  const [popUp, setPopUp] = useState(false);
+
   return (
     <>
       {/* {<!-- Add buttons and other fields here-->} */}
@@ -64,21 +68,6 @@ function Assignments() {
               </button>
             </Link>
             &ensp;
-            {/* <button
-              onClick={() =>
-                dispatch(addAssignment({ ...assignment, course: courseId }))
-              }
-            >
-              Add
-            </button>
-            <input
-              value={assignment.title}
-              onChange={(e) =>
-                dispatch(
-                  setAssignment({ ...assignment, title: e.target.value })
-                )
-              }
-            /> */}
             <button className="btn btn-light">
               <FaEllipsisV />
             </button>
@@ -113,8 +102,53 @@ function Assignments() {
                       {assin.title}
                     </Link>
                     <span className="float-end">
+                      <Button
+                        className="btn btn-danger"
+                        onClick={() => {
+                          setPopUp(true);
+                          dispatch(setAssignment(assin));
+                          // dispatch(deleteAssignment(assignment._id));
+                        }}
+                      >
+                        Delete
+                      </Button>
+                      &ensp;
                       <FaCheckCircle className="text-success" />
                       <FaEllipsisV className="ms-2" />
+                      {/* ------------ Looks like this might be the problem! -----------*/}
+                      <Modal
+                        show={popUp}
+                        onHide={() => {
+                          setPopUp(false);
+                        }}
+                      >
+                        <Modal.Header closeButton>
+                          <Modal.Title>Delete {assin.title}</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                          Do you want to delete {assin.title} ?
+                        </Modal.Body>
+                        <Modal.Footer>
+                          <Button
+                            variant="secondary"
+                            onClick={() => {
+                              setPopUp(false);
+                            }}
+                          >
+                            Cancel
+                          </Button>
+                          <Link
+                            to={`/Kanbas/Courses/${courseId}/Assignments`}
+                            onClick={() => {
+                              dispatch(deleteAssignment(assignment._id));
+                              setPopUp(false);
+                            }}
+                            className="btn btn-danger ms-2 float-end"
+                          >
+                            Yes
+                          </Link>
+                        </Modal.Footer>
+                      </Modal>
                     </span>
                   </li>
                 ))}
