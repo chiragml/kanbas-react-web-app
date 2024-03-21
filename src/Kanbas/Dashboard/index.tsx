@@ -29,25 +29,35 @@ function Dashboard({
         className="form-control"
         onChange={(e) => setCourse({ ...course, name: e.target.value })}
       />
+      <br />
       <input
         value={course.number}
         className="form-control"
         onChange={(e) => setCourse({ ...course, number: e.target.value })}
-      />
+      />{' '}
+      <br />
       <input
         value={course.startDate}
         className="form-control"
         type="date"
         onChange={(e) => setCourse({ ...course, startDate: e.target.value })}
-      />
+      />{' '}
+      <br />
       <input
         value={course.endDate}
         className="form-control"
         type="date"
         onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
-      />
-      <button onClick={addNewCourse}>Add</button>
-      <button onClick={updateCourse}>Update</button>
+      />{' '}
+      <br />
+      <button className="btn btn-success" onClick={addNewCourse}>
+        Add
+      </button>
+      &ensp;
+      <button className="btn btn-light" onClick={updateCourse}>
+        Update
+      </button>
+      <br />
       <h2>Published Courses (4)</h2> <hr />
       <div className="row">
         <div className="row row-cols-1 row-cols-md-5 g-4">
@@ -55,18 +65,9 @@ function Dashboard({
             <div key={course._id} className="col" style={{ width: 300 }}>
               <div className="card">
                 <div style={{ backgroundColor: '#6CB4EE', height: 150 }}>
-                  {/* <button className="btn btn-light float-end"> */}
                   <FaEllipsisV
                     style={{ float: 'right', color: 'white', margin: '10px' }}
                   />
-                  {/* </button> */}
-
-                  {/* <img
-                    alt="none"
-                    src="./download.png"
-                    className="card-img-top"
-                    style={{ height: 150 }}
-                  /> */}
                 </div>
                 <div className="card-body">
                   <Link
@@ -81,6 +82,7 @@ function Dashboard({
                     {course.name}
                     <br />
                     <button
+                      className="btn btn-light"
                       onClick={(event) => {
                         event.preventDefault();
                         setCourse(course);
@@ -88,7 +90,9 @@ function Dashboard({
                     >
                       Edit
                     </button>
+                    &ensp;
                     <button
+                      className="btn btn-danger"
                       onClick={(event) => {
                         event.preventDefault();
                         deleteCourse(course._id);
